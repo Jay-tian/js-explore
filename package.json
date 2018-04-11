@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "eslint": "^4.19.1",
+    "jay-webpack-scaffold": "^1.0.5"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=development settingPath='/setting.js' webpack -p --config 'webpack.config.js'",
+    "dev": "cross-env NODE_ENV=production settingPath='/setting.js' webpack-dev-server --color --config 'webpack.config.js'",
+    "fix": "./node_modules/.bin/eslint --fix"
+  }
+}
